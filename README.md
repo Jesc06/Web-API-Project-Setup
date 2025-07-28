@@ -22,6 +22,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+//Auto redirect to swagger UI
 app.MapGet("/", context =>
 {
     context.Response.Redirect("/swagger");
